@@ -1,0 +1,111 @@
+.header {
+    padding-top: 80px;
+
+    @include responsive() {
+        padding-top: 40px;
+    }
+}
+header img {
+    width: 150px;
+
+    display: block;
+    margin: 0 auto;
+
+    border-radius: 100%;
+}
+
+.texts {
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: $white;
+
+    @include responsive() {
+        font-size: 21px;
+    }
+}
+h2 {
+    font-size: 21px;
+    color: $white;
+
+    @include responsive() {
+        font-size: 18px;
+    }
+}
+h3 {
+    font-size: 18px;
+    color: $white;
+    font-weight: normal;
+
+    @include responsive() {
+        font-size: 16px;
+    }
+}
+
+.list{
+    width: 300px;
+    height: 60px;
+    background: $green-2;
+    border-radius: 30px;
+
+    text-align: center;
+    margin: 0 auto;
+
+    position: relative;
+    top: 50px;
+    z-index: 1;
+
+    @include responsive() {
+        width: 70vw;
+        height: 10vh;
+    }
+}
+
+.social {
+    list-style: none;
+    display: inline-flex;
+    line-height: 50px;
+
+    position: relative;
+    top: 8px;
+}
+
+.social li {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+    background: $white-dark;
+
+    a {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+
+    }
+}
+
+svg {
+    stroke: $green-3;
+
+    &:hover {
+        stroke: $purple;
+    }
+
+    &:active {
+        stroke: $purple;
+    }
+}
+.icon {
+    position: relative;
+    padding: 5px;
+}
+.insta {
+    left: 1px;
+}
+.linkd {
+    left: 2px;
+}

@@ -1,0 +1,54 @@
+.container-main {
+    height: 51vh;
+
+    position: relative;
+
+    top: 20px;
+
+    border-radius: 70px 70px 0 0 ;
+
+    background: $white-dark;
+}
+
+.buttons {
+    position: relative;
+    text-align: center;
+    top: 50px;
+    padding-top: 72px;
+
+    li {
+        list-style: none;
+    }
+
+    @include responsive() {
+        padding-top: 30px;
+    }
+}
+
+.btn {
+    cursor: pointer;
+
+    width: 400px;
+    height: 60px;
+
+    background: $green-2;
+    border-radius: 20px;
+    border: none;
+
+    &:hover {
+        background: $blue-light;
+    }
+
+    &:active {
+        background: $blue-light;
+    }
+
+    @include responsive() {
+        width: 80vw;
+        height: 10vh;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
